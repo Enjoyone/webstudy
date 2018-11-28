@@ -1,0 +1,15 @@
+1.<h1 align=""></h1>
+2.
+水平      hr
+换行      <br/>
+段落      p
+权重标签  b加粗,i斜体,u下划线,del中划线
+空格符        &nbsp
+
+3.
+<html lang="en">
+4.
+<head>
+    <meta charset="UTF-8">
+    <title>列表标签</title>
+</head>

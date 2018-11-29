@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格标签学习</title>
+</head>
+<body>
+<h3>表格标签学习：</h3>
+<hr>
+<!--tr 行；td 一个单元格，默认居左；属性：border；th单元格，标题格，居中加黑-->
+<table border="1" width="400" height="100" cellpadding="10"><!--不推荐使用！-->
+    <!--cellpadding 内容到边的距离  cellspaciing 线的宽度-->
+    <tr heig>
+        <td><b>科目</b></td>
+        <th>分数</th>
+        <td>说明</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+    </tr>
+
+</table>
+
+<h3>单元格的合并学习：</h3>
+<!--table>tr*4>td*5-->
+<table border="1">
+    <tr height="50">
+        <td width="100"></td>
+        <td width="100"></td>
+        <td width="100"></td>
+        <td width="100"></td>
+        <td width="100"></td>
+    </tr>
+    <tr height="50">
+        <td colspan="2"></td><!--占了两个位置-->
+        <td></td><!--不删此  就会被顶开-->
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr height="50">
+        <td></td>
+        <td></td>
+        <td rowspan="2"></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr height="50">
+        <td></td>
+        <td></td>
+        <!--<td></td>-->
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+   
+
+
+     
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form标签</title>
+</head>
+<body>
+<h3>form标签</h3>
+<hr>
+<!--收集并提交数据给指定 的服务器-->
+<form action="#" method="get">
+    <!--提交标签内部的数据 action 提交的地址；
+    method提交方式get：小量数据，拼接到url？后，不安全，post：大量数据-->
+    用户名：<input type="text" name="user" value="张三"><!--value为默认值-->
+    <br>
+    密码：<input type="text" name="pw">
+    密码2：<input type="password" name="pw1"><!--隐藏密码-->
+    <input type="submit" value="登录">
+<!--name为键，必须有name属性-->
+    <br>
+    <input type="button" value="1">
+    <br>
+    性别：男<label>
+    <input type="radio" name="sex" value="man">
+</label>
+    女<input type="radio" name="sex" value="woman">
+    <!--name属性一样，只能单选，提交的是value值-->
+    
+    
+    
+</form>
+
+<form>
+    <label for="male">Male</label>
+    <input type="radio" name="sex" id="male" />
+    <br />
+    <label for="female">Female</label>
+    <input type="radio" name="sex" id="female" />
+</form>
+
+<form action="#" method="get">
+<!--多选-->
+    A<input type="checkbox" name="1" id="" value="A" checked="checked"><br>
+    B<input type="checkbox" name="1" id="" value="B"><br>
+    C<input type="checkbox" name="1" id="" value="C">
+<!--checked="checked":默认选择-->
+
+<!--下拉-->
+    <hr>
+    <select name="address" id="">
+        <option value="0">--11--</option>
+        <option value="1">beijing</option>
+        <option value="2" selected="selected">shanghai</option>
+        <option value="3">guangzhou</option>
+        <option value="4">HongKong</option>
+    </select>
+
+<!--文本域-->
+    <hr>
+    评论：<textarea name="1" id="评论" cols="30" rows="10"></textarea>
+
+    <!--普通按钮   button-->
+    <hr>
+    <!--隐藏标签-->
+    <input type="hidden" name="1" value="wdwd">
+
+
+    <input type="submit">
+</form>
+</body>
+</html>

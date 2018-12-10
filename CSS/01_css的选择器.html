@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css选择器学习</title>
+    <style>
+        /*<!--标签选择-->*/
+        table{
+            width: 80px;
+            height: 60px;
+            border: solid 1px;
+            background: red;
+            color: red;
+        }
+        #t1{
+            background: blue;
+        }/*id选择器：使用id属性选择*/
+
+        b{
+            color:gold;
+        }
+
+
+        /*类选择器：*/
+        .common{
+            color: black;
+        }
+    /*全部选择器*/
+        *{
+            /*选择所有html标签，相同样式*/
+
+        }
+        组合选择器
+        .common,table{
+            background: yellow;
+        }
+
+        /*使用#选择id选择器 较优先*/
+
+
+    </style>
+</head>
+<body>
+<h3>css选择器学习：</h3>
+
+<hr>
+<hr>
+<table id="t1" class="common">
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+
+<b class="common">css学习</b>
+
+</body>
+</html>
